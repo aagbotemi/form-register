@@ -104,11 +104,11 @@ body {
 }
 
 button {
-    background: #006400;
+    background: #021b79; /*,   */
     color: #fff;
     padding: 9px;
     width: 100%;
-    border: 1px solid #006400;
+    border: 1px solid #021b79;
     border-radius: 5px;
     font-size: 1.05rem;
     outline: none;
