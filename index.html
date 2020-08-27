@@ -8,47 +8,73 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <!--CSS-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
     <title>FORM REGISTRATION</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h3>Sign up</h3>
+            <h3>Registration Form</h3>
+            <marquee behavior="scroll" direction="left">Registration ends on 31/08/2020, 11:59pm</marquee>
+
         </div>
         <form action="" class="form" id="form"  method="POST" >
             <div class="form-control">
-                <label>Username</label>
-                <input type="text" name="form" id="username" placeholder="Username..." required>
+                <label>First Name</label>
+                <input type="text" name="form" id="fname" placeholder="First Name...">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" name="form" id="lname" placeholder="Last Name...">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error Message</small>
             </div>
             <div class="form-control">
                 <label>Email</label>
-                <input type="email" name="form" id="email" placeholder="you@example.com" required>
+                <input type="email" name="form" id="email" placeholder="you@example.com">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error Message</small>
             </div>
             <div class="form-control">
-                <label>Password</label>
-                <input type="password" name="form" id="password" placeholder="Password" required>
+                <label>Phone Number</label>
+                <input type="number" name="form" id="phone" placeholder="Phone Number">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error Message</small>
             </div>
             <div class="form-control">
-                <label>Confirm Password</label>
-                <input type="password" name="form" id="password2" placeholder="Confirm Password" required>
+                <label>Date of Birth</label>
+                <input type="date" name="form" id="birthDate" placeholder="Date of Birth">
                 <i class="fas fa-check-circle"></i>
                 <i class="fas fa-exclamation-circle"></i>
                 <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>State of Origin</label>
+                <input type="text" name="form" id="state" placeholder="State of Origin">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label>Nationality</label>
+                <input type="text" name="form" id="nationality" placeholder="Nationality">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <div class="form-group">
+                <label><input type="checkbox" id="checkbox1" required> Accept our <a href="#">terms</a> and <a href="#">conditions</a></label>
             </div>
             <button id="submit">Submit</button>
         </form>
     </div>
 
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
